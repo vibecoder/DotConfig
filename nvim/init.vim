@@ -66,8 +66,9 @@ Plug 'flazz/vim-colorschemes'
 Plug 'chriskempson/base16-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug '/home/mpaulson/personal/VimDeathmatch/client'
-
+Plug 'arcticicestudio/nord-vim'
 " HARPOON!!
+Plug 'joshdick/onedark.vim'
 " Plug '/home/theprimeagen/personal/vim-with-me/ui'
 " Plug '/home/theprimeagen/personal/harpoon/wildcards'
 " Plug '/home/theprimeagen/personal/git-worktree.nvim/master'
@@ -83,12 +84,47 @@ Plug 'sbdchd/neoformat'
 "  Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 " Plug 'hoob3rt/lualine.nvim'
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
+colorscheme nord
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
 " lua require("theprimeagen")
 " lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+
+set guicursor=
+set relativenumber
+set nohlsearch
+set hidden
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set termguicolors
+set scrolloff=8
+set noshowmode
+" set completeopt=menuone,noinsert,noselect
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=50
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
 
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
