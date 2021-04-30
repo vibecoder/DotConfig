@@ -88,7 +88,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
-colorscheme nord
+colorscheme onedark
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
 " lua require("theprimeagen")
@@ -128,7 +128,7 @@ set shortmess+=c
 
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
-
+let g:airline_theme ='base16'
 if executable('rg')
     let g:rg_derive_root='true'
 endif
